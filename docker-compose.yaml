@@ -19,8 +19,9 @@ services:
       - ./.cache/user:/home/appuser/.cache
       - ./.cache/triton:/home/appuser/.triton    
       - ./.cache/config:/app/appuser/.config
-      - ./.cache/nv:/home/appuser/.nv 
-      - ./.cache/keras:/home/appuser/.keras      
+      - ./.cache/nv:/home/appuser/.nv
+      - ./.cache/keras:/home/appuser/.keras
+      - ./.cache/huggingface:/home/appuser/.cache/huggingface
     deploy:
       resources:
         reservations:
